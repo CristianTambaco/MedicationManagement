@@ -215,17 +215,17 @@ private fun EmptyState(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Icon(
-            imageVector = Icons.Default.Medication,
-            contentDescription = null,
-            modifier = Modifier.size(80.dp),
-            tint = MaterialTheme.colorScheme.primary.copy(alpha = 0.5f)
-        )
+//        Icon(
+//            imageVector = Icons.Default.Medication,
+//            contentDescription = null,
+//            modifier = Modifier.size(80.dp),
+//            tint = MaterialTheme.colorScheme.primary.copy(alpha = 0.5f)
+//        )
         
         Spacer(modifier = Modifier.height(16.dp))
         
         Text(
-            text = "No tienes medicamentos registrados",
+            text = "No existen registros",
             style = MaterialTheme.typography.titleMedium,
             textAlign = TextAlign.Center,
             color = MaterialTheme.colorScheme.onSurfaceVariant
@@ -233,20 +233,20 @@ private fun EmptyState(
         
         Spacer(modifier = Modifier.height(8.dp))
         
-        Text(
-            text = "Agrega tu primer medicamento para recibir recordatorios",
-            style = MaterialTheme.typography.bodyMedium,
-            textAlign = TextAlign.Center,
-            color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f)
-        )
+//        Text(
+//            text = "Agrega tu primer medicamento para recibir recordatorios",
+//            style = MaterialTheme.typography.bodyMedium,
+//            textAlign = TextAlign.Center,
+//            color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f)
+//        )
         
         Spacer(modifier = Modifier.height(24.dp))
         
-        Button(onClick = onAddClick) {
-            Icon(Icons.Default.Add, contentDescription = null)
-            Spacer(modifier = Modifier.width(8.dp))
-            Text("Agregar medicamento")
-        }
+//        Button(onClick = onAddClick) {
+////            Icon(Icons.Default.Add, contentDescription = null)
+//            Spacer(modifier = Modifier.width(8.dp))
+//            Text("Agregar medicamento")
+//        }
     }
 }
 

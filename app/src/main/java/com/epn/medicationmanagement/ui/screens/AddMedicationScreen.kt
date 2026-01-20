@@ -202,17 +202,17 @@ fun AddMedicationScreen(
                 )
             ) {
                 Column(modifier = Modifier.padding(16.dp)) {
-                    Text(
-                        text = "ℹ️ Información",
-                        style = MaterialTheme.typography.titleSmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
+//                    Text(
+//                        text = "ℹ️ Información",
+//                        style = MaterialTheme.typography.titleSmall,
+//                        color = MaterialTheme.colorScheme.onSurfaceVariant
+//                    )
                     Spacer(modifier = Modifier.height(8.dp))
-                    Text(
-                        text = "Después de guardar el medicamento, podrás agregar los horarios de recordatorio desde la pantalla de detalles.",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.8f)
-                    )
+//                    Text(
+//                        text = "Después de guardar el medicamento, podrás agregar los horarios de recordatorio desde la pantalla de detalles.",
+//                        style = MaterialTheme.typography.bodySmall,
+//                        color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.8f)
+//                    )
                 }
             }
             
