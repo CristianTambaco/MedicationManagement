@@ -41,20 +41,20 @@ fun MedicationCard(
             verticalAlignment = Alignment.CenterVertically
         ) {
             // Icono de medicamento
-            Surface(
-                modifier = Modifier.size(48.dp),
-                shape = MaterialTheme.shapes.medium,
-                color = MaterialTheme.colorScheme.primaryContainer
-            ) {
-                Icon(
-                    imageVector = Icons.Default.Medication,
-                    contentDescription = null,
-                    modifier = Modifier
-                        .padding(12.dp)
-                        .size(24.dp),
-                    tint = MaterialTheme.colorScheme.onPrimaryContainer
-                )
-            }
+//            Surface(
+//                modifier = Modifier.size(48.dp),
+//                shape = MaterialTheme.shapes.medium,
+//                color = MaterialTheme.colorScheme.primaryContainer
+//            ) {
+//                Icon(
+//                    imageVector = Icons.Default.Medication,
+//                    contentDescription = null,
+//                    modifier = Modifier
+//                        .padding(12.dp)
+//                        .size(24.dp),
+//                    tint = MaterialTheme.colorScheme.onPrimaryContainer
+//                )
+//            }
             
             Spacer(modifier = Modifier.width(16.dp))
             
