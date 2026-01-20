@@ -80,7 +80,7 @@ fun HomeScreen(
             ExtendedFloatingActionButton(
                 onClick = onNavigateToAddMedication,
                 icon = { Icon(Icons.Default.Add, contentDescription = null) },
-                text = { Text("Agregar") },
+                text = { Text("Agregar medicamento") },
                 containerColor = MaterialTheme.colorScheme.primary,
                 contentColor = MaterialTheme.colorScheme.onPrimary
             )

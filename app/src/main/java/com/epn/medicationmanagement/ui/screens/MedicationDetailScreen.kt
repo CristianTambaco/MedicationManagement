@@ -111,14 +111,14 @@ fun MedicationDetailScreen(
                         modifier = Modifier.fillMaxWidth(),
                         verticalAlignment = Alignment.CenterVertically
                     ) {
-                        Icon(
-                            imageVector = Icons.Default.Schedule,
-                            contentDescription = null,
-                            tint = MaterialTheme.colorScheme.primary
-                        )
+//                        Icon(
+//                            imageVector = Icons.Default.Schedule,
+//                            contentDescription = null,
+//                            tint = MaterialTheme.colorScheme.primary
+//                        )
                         Spacer(modifier = Modifier.width(8.dp))
                         Text(
-                            text = "Horarios de recordatorio",
+                            text = "Recordatorio",
                             style = MaterialTheme.typography.titleMedium,
                             fontWeight = FontWeight.SemiBold
                         )
@@ -138,24 +138,24 @@ fun MedicationDetailScreen(
                                     .padding(24.dp),
                                 horizontalAlignment = Alignment.CenterHorizontally
                             ) {
-                                Icon(
-                                    imageVector = Icons.Default.Schedule,
-                                    contentDescription = null,
-                                    modifier = Modifier.size(48.dp),
-                                    tint = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.5f)
-                                )
+//                                Icon(
+//                                    imageVector = Icons.Default.Schedule,
+//                                    contentDescription = null,
+//                                    modifier = Modifier.size(48.dp),
+//                                    tint = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.5f)
+//                                )
                                 Spacer(modifier = Modifier.height(8.dp))
                                 Text(
-                                    text = "No hay horarios configurados",
+                                    text = "Sin registro",
                                     style = MaterialTheme.typography.bodyMedium,
                                     color = MaterialTheme.colorScheme.onSurfaceVariant
                                 )
                                 Spacer(modifier = Modifier.height(4.dp))
-                                Text(
-                                    text = "Agrega un horario para recibir recordatorios",
-                                    style = MaterialTheme.typography.bodySmall,
-                                    color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f)
-                                )
+//                                Text(
+//                                    text = "Agrega un horario para recibir recordatorios",
+//                                    style = MaterialTheme.typography.bodySmall,
+//                                    color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f)
+//                                )
                             }
                         }
                     }
@@ -283,14 +283,14 @@ private fun MedicationInfoCard(mws: MedicationWithSchedules) {
             Row(
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Icon(
-                    imageVector = Icons.Default.Info,
-                    contentDescription = null,
-                    tint = MaterialTheme.colorScheme.primary
-                )
+//                Icon(
+//                    imageVector = Icons.Default.Info,
+//                    contentDescription = null,
+//                    tint = MaterialTheme.colorScheme.primary
+//                )
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
-                    text = "Información del medicamento",
+                    text = "Detalles",
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.SemiBold
                 )
@@ -300,7 +300,7 @@ private fun MedicationInfoCard(mws: MedicationWithSchedules) {
             
             if (!medication.dosis.isNullOrBlank() || !medication.unidad.isNullOrBlank()) {
                 InfoRow(
-                    label = "Dosis",
+                    label = "Dosis medicamento",
                     value = buildString {
                         append(medication.dosis ?: "")
                         if (!medication.unidad.isNullOrBlank()) {
@@ -320,7 +320,7 @@ private fun MedicationInfoCard(mws: MedicationWithSchedules) {
             
             if (!medication.notas.isNullOrBlank()) {
                 InfoRow(
-                    label = "Notas",
+                    label = "Información adicional",
                     value = medication.notas
                 )
             }

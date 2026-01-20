@@ -38,7 +38,7 @@ fun AddMedicationScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Nuevo Medicamento") },
+                title = { Text("Medicamento") },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(
@@ -86,7 +86,7 @@ fun AddMedicationScreen(
                             strokeWidth = 2.dp
                         )
                     } else {
-                        Icon(Icons.Default.Save, contentDescription = null)
+//                        Icon(Icons.Default.Save, contentDescription = null)
                     }
                 },
                 text = { Text("Guardar") },
@@ -125,8 +125,8 @@ fun AddMedicationScreen(
                     nombre = it
                     errorMessage = null
                 },
-                label = { Text("Nombre del medicamento *") },
-                placeholder = { Text("Ej: Paracetamol") },
+                label = { Text("Medicamento ") },
+                placeholder = { Text("Ej: Naproxeno") },
                 modifier = Modifier.fillMaxWidth(),
                 singleLine = true,
                 keyboardOptions = KeyboardOptions(
@@ -144,8 +144,8 @@ fun AddMedicationScreen(
                 OutlinedTextField(
                     value = dosis,
                     onValueChange = { dosis = it },
-                    label = { Text("Dosis") },
-                    placeholder = { Text("Ej: 500") },
+                    label = { Text("Dosis medicamento") },
+                    placeholder = { Text("Ej: 20") },
                     modifier = Modifier.weight(1f),
                     singleLine = true,
                     keyboardOptions = KeyboardOptions(
@@ -171,7 +171,7 @@ fun AddMedicationScreen(
                 value = instrucciones,
                 onValueChange = { instrucciones = it },
                 label = { Text("Instrucciones") },
-                placeholder = { Text("Ej: Tomar con comida") },
+                placeholder = { Text("Ej: Después de la merienda") },
                 modifier = Modifier.fillMaxWidth(),
                 singleLine = true,
                 keyboardOptions = KeyboardOptions(
@@ -184,8 +184,8 @@ fun AddMedicationScreen(
             OutlinedTextField(
                 value = notas,
                 onValueChange = { notas = it },
-                label = { Text("Notas adicionales") },
-                placeholder = { Text("Ej: Recetado por Dr. García") },
+                label = { Text("Información adicional") },
+                placeholder = { Text("Ej: Ninguno") },
                 modifier = Modifier.fillMaxWidth(),
                 minLines = 3,
                 maxLines = 5,

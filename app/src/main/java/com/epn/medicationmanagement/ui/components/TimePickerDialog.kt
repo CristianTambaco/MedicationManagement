@@ -78,22 +78,22 @@ fun TimePickerDialog(
                                 label = { Text("Todos") },
                                 modifier = Modifier.weight(1f)
                             )
-                            FilterChip(
-                                selected = lunes && martes && miercoles && jueves && viernes && !sabado && !domingo,
-                                onClick = {
-                                    lunes = true; martes = true; miercoles = true
-                                    jueves = true; viernes = true; sabado = false; domingo = false
-                                },
-                                label = { Text("L-V") },
-                                modifier = Modifier.weight(1f)
-                            )
+//                            FilterChip(
+//                                selected = lunes && martes && miercoles && jueves && viernes && !sabado && !domingo,
+//                                onClick = {
+//                                    lunes = true; martes = true; miercoles = true
+//                                    jueves = true; viernes = true; sabado = false; domingo = false
+//                                },
+//                                label = { Text("L-V") },
+//                                modifier = Modifier.weight(1f)
+//                            )
                             FilterChip(
                                 selected = !lunes && !martes && !miercoles && !jueves && !viernes && sabado && domingo,
                                 onClick = {
                                     lunes = false; martes = false; miercoles = false
                                     jueves = false; viernes = false; sabado = true; domingo = true
                                 },
-                                label = { Text("Fin de semana") },
+                                label = { Text("Sábados y domingos") },
                                 modifier = Modifier.weight(1f)
                             )
                         }

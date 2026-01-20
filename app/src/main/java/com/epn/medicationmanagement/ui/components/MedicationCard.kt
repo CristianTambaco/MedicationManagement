@@ -106,7 +106,7 @@ fun MedicationCard(
                 } else {
                     Spacer(modifier = Modifier.height(4.dp))
                     Text(
-                        text = "Sin horarios configurados",
+                        text = "Sin horarios",
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.error
                     )

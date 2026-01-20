@@ -116,7 +116,7 @@ fun EditMedicationScreen(
                                 strokeWidth = 2.dp
                             )
                         } else {
-                            Icon(Icons.Default.Save, contentDescription = null)
+//                            Icon(Icons.Default.Save, contentDescription = null)
                         }
                     },
                     text = { Text("Guardar") },
@@ -170,11 +170,11 @@ fun EditMedicationScreen(
                     ) {
                         Column {
                             Text(
-                                text = "Medicamento activo",
+                                text = "Notificaciones",
                                 style = MaterialTheme.typography.titleSmall
                             )
                             Text(
-                                text = if (activo) "Recibirás recordatorios" else "No recibirás recordatorios",
+                                text = if (activo) "Activo" else "Inactivo",
                                 style = MaterialTheme.typography.bodySmall,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant
                             )
@@ -193,8 +193,8 @@ fun EditMedicationScreen(
                         nombre = it
                         errorMessage = null
                     },
-                    label = { Text("Nombre del medicamento *") },
-                    placeholder = { Text("Ej: Paracetamol") },
+                    label = { Text("Medicamento ") },
+                    placeholder = { Text("Ej: Naproxeno") },
                     modifier = Modifier.fillMaxWidth(),
                     singleLine = true,
                     keyboardOptions = KeyboardOptions(
@@ -212,8 +212,8 @@ fun EditMedicationScreen(
                     OutlinedTextField(
                         value = dosis,
                         onValueChange = { dosis = it },
-                        label = { Text("Dosis") },
-                        placeholder = { Text("Ej: 500") },
+                        label = { Text("Dosis medicamento") },
+                        placeholder = { Text("Ej: 20") },
                         modifier = Modifier.weight(1f),
                         singleLine = true,
                         keyboardOptions = KeyboardOptions(
@@ -239,7 +239,7 @@ fun EditMedicationScreen(
                     value = instrucciones,
                     onValueChange = { instrucciones = it },
                     label = { Text("Instrucciones") },
-                    placeholder = { Text("Ej: Tomar con comida") },
+                    placeholder = { Text("Ej: Después de la merienda") },
                     modifier = Modifier.fillMaxWidth(),
                     singleLine = true,
                     keyboardOptions = KeyboardOptions(
@@ -252,8 +252,8 @@ fun EditMedicationScreen(
                 OutlinedTextField(
                     value = notas,
                     onValueChange = { notas = it },
-                    label = { Text("Notas adicionales") },
-                    placeholder = { Text("Ej: Recetado por Dr. García") },
+                    label = { Text("Información adicional") },
+                    placeholder = { Text("Ej: Ninguno") },
                     modifier = Modifier.fillMaxWidth(),
                     minLines = 3,
                     maxLines = 5,
