@@ -3,15 +3,15 @@ package com.epn.medicationmanagement.ui.theme
 import androidx.compose.ui.graphics.Color
 
 // Colores para tema claro - Paleta de salud/medicamentos (tonos verdes y azules)
-val Primary = Color(0xFF1B5E20)         // Verde oscuro - profesional, salud
+val Primary = Color(0xFF1B2C5E)         // Verde oscuro - profesional, salud
 val OnPrimary = Color(0xFFFFFFFF)
-val PrimaryContainer = Color(0xFFA5D6A7) // Verde claro
-val OnPrimaryContainer = Color(0xFF1B5E20)
+val PrimaryContainer = Color(0xFF4364F3) // Verde claro
+val OnPrimaryContainer = Color(0xFF1B225E)
 
-val Secondary = Color(0xFF00695C)        // Verde azulado - confianza
+val Secondary = Color(0xFF003369)        // Verde azulado - confianza
 val OnSecondary = Color(0xFFFFFFFF)
 val SecondaryContainer = Color(0xFFB2DFDB)
-val OnSecondaryContainer = Color(0xFF00695C)
+val OnSecondaryContainer = Color(0xFF003869)
 
 val Tertiary = Color(0xFF0277BD)         // Azul - medicamentos
 val OnTertiary = Color(0xFFFFFFFF)
