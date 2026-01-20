@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Gestión de medicamentos</string>
+    
+    <!-- Pantalla principal -->
+    <string name="title_home">Gestión de medicamentos</string>
+    <string name="btn_add_medication">Agregar</string>
+    <string name="empty_medications_title">No tienes medicamentos registrados</string>
+    <string name="empty_medications_subtitle">Agrega tu primer medicamento para recibir recordatorios</string>
+    
+    <!-- Agregar/Editar medicamento -->
+    <string name="title_add_medication">Nuevo Medicamento</string>
+    <string name="title_edit_medication">Editar Medicamento</string>
+    <string name="label_name">Nombre del medicamento</string>
+    <string name="label_dose">Dosis</string>
+    <string name="label_unit">Unidad</string>
+    <string name="label_instructions">Instrucciones</string>
+    <string name="label_notes">Notas adicionales</string>
+    <string name="btn_save">Guardar</string>
+    <string name="error_name_required">El nombre del medicamento es obligatorio</string>
+    
+    <!-- Detalles del medicamento -->
+    <string name="title_schedules">Horarios de recordatorio</string>
+    <string name="btn_add_schedule">Agregar horario</string>
+    <string name="empty_schedules">No hay horarios configurados</string>
+    
+    <!-- Diálogos -->
+    <string name="dialog_delete_title">Eliminar</string>
+    <string name="dialog_delete_medication_message">¿Estás seguro de que deseas eliminar este medicamento?</string>
+    <string name="dialog_delete_schedule_message">¿Estás seguro de que deseas eliminar este horario?</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_delete">Eliminar</string>
+    <string name="btn_confirm">Confirmar</string>
+    
+    <!-- Días de la semana -->
+    <string name="day_monday">Lunes</string>
+    <string name="day_tuesday">Martes</string>
+    <string name="day_wednesday">Miércoles</string>
+    <string name="day_thursday">Jueves</string>
+    <string name="day_friday">Viernes</string>
+    <string name="day_saturday">Sábado</string>
+    <string name="day_sunday">Domingo</string>
+    <string name="all_days">Todos los días</string>
+    <string name="weekdays">Lunes a Viernes</string>
+    <string name="weekends">Fines de semana</string>
+    
+    <!-- Notificaciones -->
+    <string name="notification_channel_name">Recordatorios de Medicamentos</string>
+    <string name="notification_channel_description">Notificaciones para recordarte tomar tus medicamentos</string>
+    <string name="notification_title">Hora de tomar tu medicamento</string>
+    
+    <!-- Permisos -->
+    <string name="permission_notification_title">Permisos de notificación</string>
+    <string name="permission_notification_message">Para recibir recordatorios, necesitas permitir las notificaciones.</string>
+    <string name="btn_allow_notifications">Permitir notificaciones</string>
+</resources>
